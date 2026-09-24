@@ -1,6 +1,7 @@
 #pragma once
 #include "ProcessInterface.hpp"
-#include "utils.hpp"
+#include "RelayController.hpp"
+#include "StorageService.hpp"
 
 class Eventos : public ProcessInterface {
 private:

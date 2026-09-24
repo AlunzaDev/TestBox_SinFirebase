@@ -1,6 +1,8 @@
 #pragma once
 #include "ProcessInterface.hpp"
-#include "utils.hpp"
+#include "PauseController.hpp"
+#include "RelayController.hpp"
+#include "StorageService.hpp"
 
 class ModoBarreraSimple : public ProcessInterface {
 private:
@@ -24,7 +26,7 @@ public:
     actualizarEstadoPausa();
 
     if (pausaActiva) return;
-    digitalWrite(ledPin, HIGH);
+    digitalWrite(ledPause, HIGH);
     digitalWrite(ledV, LOW);
 
     // Si estamos esperando, verificar si ha pasado el tiempo
