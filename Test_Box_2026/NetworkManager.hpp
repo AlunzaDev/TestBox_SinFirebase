@@ -9,8 +9,8 @@ void wifiBegin() {
   if (wifiConnecting) return;
   wifiConnecting = true;
 
-  IPAddress local_ip(192, 168, 4, 1);
-  IPAddress gateway(192, 168, 4, 1);
+  IPAddress local_ip(192, 168, 5, 1);
+  IPAddress gateway(192, 168, 5, 1);
   IPAddress subnet(255, 255, 255, 0);
 
   WiFi.mode(WIFI_AP);

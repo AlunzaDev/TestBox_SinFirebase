@@ -12,7 +12,7 @@
 
 // ========================== CREDENCIALES DEL AP ============================
 
-String apSsid = "TestBox";
+String apSsid = "TestBox2";
 String apPassword = "TestBox2026";
 
 // ========================== CONFIGURACIÓN DEL TIMER  ======================
@@ -22,7 +22,7 @@ int seg = 0;
 hw_timer_t* timer = NULL;
 portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
 
-// ========================== INTERRUPCIÓN TIMER ============================
+// ========================== INTERRUPCIÓN TIMER ============================ 
 
 void IRAM_ATTR onTimer() {
   portENTER_CRITICAL_ISR(&timerMux);
